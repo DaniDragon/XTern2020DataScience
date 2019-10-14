@@ -1,0 +1,7 @@
+Due to time contraints, I was not able to write a k-means algorithm to seperate the data into its 19 groupings, so I seperated them by hand and did the calculations in excel. 
+
+Since the prompt says that Xtern Xpress also had a charging bus, I am going to assume that the scooters charge at 1 power level per hour on their charging station and they charge faster on the bus. I am also assuming that the bus must be parked while the scooters are charging. I am also assuming that the roads all have similar traffic levels and are fairly direct between charging stations.
+
+Based on the average and mode power levels, the most popular scooter location is either the one around (0.75, 0.6) or (-0.1, -0.1). They have the lowest average power levels and also have very low mode power levels. 
+
+My suggestion for the path of the mega bus is to first stop at (0.7, 0.8), taking scooters at 0, stopping at ~15% bus capacity. The next stop would be at (0.75, 0.6), filling to ~65% capacity with scooter at 0 or 1, prioritizing those at 0. Finally, stop at (-0.1, -0.1) filling until the station has no scooters under 2 or the bus fills up. If the bus is full, go back to its parking/charging station. If it is not, take a similar path up to (1.3, 0.9), filling up with scooters from that station. 
